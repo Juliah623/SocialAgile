@@ -24,6 +24,10 @@ import { InfoComponent } from './principal';
 import { AdministracionComponent } from './administracion';
 import { BodyComponent } from './principal';
 import { BodyadmonComponent } from './administracion';
+import { GruposComponent } from './principal/index';
+import { ExpertosComponent } from './principal/index';
+import { EncuestasComponent } from './principal/index';
+import { LibrosComponent } from './principal/index';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,11 @@ import { BodyadmonComponent } from './administracion';
     InfoComponent,
     AdministracionComponent,
     BodyComponent,
-    BodyadmonComponent
+    BodyadmonComponent,
+    GruposComponent,
+    ExpertosComponent,
+    EncuestasComponent,
+    LibrosComponent
   ],
   imports: [
     BrowserModule,
