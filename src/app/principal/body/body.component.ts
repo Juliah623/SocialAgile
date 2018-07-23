@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { EventosComponent } from './eventos/eventos.component';
 import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({

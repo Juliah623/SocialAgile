@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {
   PrincipalComponent, AlbumComponent, ChatComponent, CoachComponent, EventosComponent,
-  GerenciaComponent, InfoComponent, PerfilUsuarioComponent, ScrumComponent, BodyComponent
-} from '../principal';
+  GerenciaComponent, InfoComponent, PerfilUsuarioComponent, ScrumComponent, BodyComponent, GruposComponent, 
+  LibrosComponent, ExpertosComponent, EncuestasComponent} from '../principal';
 import { GestionUsuariosComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
 
 const routes: Routes = [
-  // se crean independientes? o con forchild?
   { path: 'Gestion-usuarios', component: GestionUsuariosComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Registro', component: RegistroComponent },
@@ -29,10 +28,22 @@ const routes: Routes = [
         path: 'Gerencia', component: GerenciaComponent
       },
       {
+        path: 'Expertos', component: ExpertosComponent
+      },
+      {
         path: 'Info', component: InfoComponent
       },
       {
         path: 'Perfil-usuario', component: PerfilUsuarioComponent
+      },
+      {
+        path: 'Encuestas', component: EncuestasComponent
+      },
+      {
+        path: 'Grupos', component: GruposComponent
+      },
+      {
+        path: 'Libros', component: LibrosComponent
       },
       {
         path: 'Scrum', component: ScrumComponent
