@@ -10,8 +10,7 @@ const routes: Routes = [
   { path: 'Gestion-usuarios', component: GestionUsuariosComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Registro', component: RegistroComponent },
-  {
-    path: 'Principal', component: PrincipalComponent, children: [
+  { path: 'Principal', component: PrincipalComponent, children: [
       {
         path: 'Album', component: AlbumComponent
       },
