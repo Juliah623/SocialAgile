@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { Router } from '../../../../node_modules/@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -7,17 +6,11 @@ import { Router } from '../../../../node_modules/@angular/router';
 })
 
 export class BodyComponent implements OnInit {
-  private idPage: Number = 1;
-  constructor(private router: Router) { }
+
+  constructor() { }
 
   ngOnInit() {
-    this.router.navigate(['Principal/Eventos']);
   }
 
-  onActivate(componentRef) {
-    this.idPage = componentRef.sayhello();
-  }
-  changeidPage() {
-    return this.idPage;
-  }
 }
+
