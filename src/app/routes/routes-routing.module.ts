@@ -1,42 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {
-  PrincipalComponent, AlbumComponent, ChatComponent, CoachComponent, EventosComponent,
-  GerenciaComponent, InfoComponent, PerfilUsuarioComponent, ScrumComponent, BodyComponent, GruposComponent, 
-  LibrosComponent, ExpertosComponent, EncuestasComponent} from '../principal';
 import { GestionUsuariosComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
+import {
+  PrincipalComponent, HomeComponent, EventosComponent, ScrumComponent, CoachComponent, GruposComponent,
+  LibrosComponent, InfoComponent, IdiComponent,  GerenciaComponent, PerfilUsuarioComponent,
+  AlbumComponent, EncuestasComponent, NoticiasComponent
+} from '../principal';
 
 const routes: Routes = [
   { path: 'Gestion-usuarios', component: GestionUsuariosComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Registro', component: RegistroComponent },
-  { path: 'Principal', component: PrincipalComponent, children: [
+  {
+    path: 'Principal', component: PrincipalComponent, children: [
       {
-        path: 'Album', component: AlbumComponent
-      },
-      {
-        path: 'Chat', component: ChatComponent
-      },
-      {
-        path: 'Coach', component: CoachComponent
+        path: 'Home', component: HomeComponent
       },
       {
         path: 'Eventos', component: EventosComponent
       },
       {
-        path: 'Gerencia', component: GerenciaComponent
+        path: 'Scrum', component: ScrumComponent
       },
       {
-        path: 'Expertos', component: ExpertosComponent
-      },
-      {
-        path: 'Info', component: InfoComponent
-      },
-      {
-        path: 'Perfil-usuario', component: PerfilUsuarioComponent
-      },
-      {
-        path: 'Encuestas', component: EncuestasComponent
+        path: 'Coach', component: CoachComponent
       },
       {
         path: 'Grupos', component: GruposComponent
@@ -45,7 +32,25 @@ const routes: Routes = [
         path: 'Libros', component: LibrosComponent
       },
       {
-        path: 'Scrum', component: ScrumComponent
+        path: 'Info', component: InfoComponent
+      },
+      {
+        path: 'Idi', component: IdiComponent
+      },
+      {
+        path: 'Gerencia', component: GerenciaComponent
+      },
+      {
+        path: 'Perfil-usuario', component: PerfilUsuarioComponent
+      },
+      {
+        path: 'Album', component: AlbumComponent
+      },
+      {
+        path: 'Encuenstas', component: EncuestasComponent
+      },
+      {
+        path: 'Noticias', component: NoticiasComponent
       }
     ]
   },

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExpertosComponent } from './expertos.component';
+import { IdiComponent } from './idi.component';
 
-describe('ExpertosComponent', () => {
-  let component: ExpertosComponent;
-  let fixture: ComponentFixture<ExpertosComponent>;
+describe('IdiComponent', () => {
+  let component: IdiComponent;
+  let fixture: ComponentFixture<IdiComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExpertosComponent ]
+      declarations: [ IdiComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExpertosComponent);
+    fixture = TestBed.createComponent(IdiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,33 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, 
-MatIconModule, MatListModule, MatCardModule, MatCheckboxModule } from '@angular/material';
+import {
+  MatToolbarModule, MatButtonModule, MatSidenavModule,
+  MatIconModule, MatListModule, MatCardModule, MatCheckboxModule
+} from '@angular/material';
 import { RoutesRoutingModule } from './routes/routes-routing.module';
 
 import { AppComponent } from './app.component';
 import { GestionUsuariosComponent } from './gestion-usuarios';
 import { LoginComponent } from './gestion-usuarios';
 import { RegistroComponent } from './gestion-usuarios';
-import { PrincipalComponent } from './principal';
 import { HeaderComponent } from './principal';
 import { FooterComponent } from './principal';
 import { HeaderadmonComponent } from './administracion';
 import { FooteradmonComponent } from './administracion';
-import { PerfilUsuarioComponent } from './principal';
-import { EventosComponent } from './principal';
-import { AlbumComponent } from './principal';
-import { ScrumComponent } from './principal';
-import { CoachComponent } from './principal';
-import { GerenciaComponent } from './principal';
-import { ChatComponent } from './principal';
-import { InfoComponent } from './principal';
 import { AdministracionComponent } from './administracion';
+import { PrincipalComponent } from './principal';
 import { BodyComponent } from './principal';
 import { BodyadmonComponent } from './administracion';
-import { GruposComponent } from './principal/index';
-import { ExpertosComponent } from './principal/index';
-import { EncuestasComponent } from './principal/index';
-import { LibrosComponent } from './principal/index';
+import { HomeComponent } from './principal';
+import { EventosComponent } from './principal';
+import { ScrumComponent } from './principal';
+import { CoachComponent } from './principal';
+import { GruposComponent } from './principal';
+import { LibrosComponent } from './principal';
+import { InfoComponent } from './principal';
+import { IdiComponent } from './principal';
+import { ChatComponent } from './principal';
+import { GerenciaComponent } from './principal';
+import { PerfilUsuarioComponent } from './principal';
+import { AlbumComponent } from './principal';
+import { EncuestasComponent } from './principal';
+import { NoticiasComponent } from './principal';
+
 
 @NgModule({
   declarations: [
@@ -35,39 +40,42 @@ import { LibrosComponent } from './principal/index';
     GestionUsuariosComponent,
     LoginComponent,
     RegistroComponent,
-    PrincipalComponent,
     HeaderComponent,
     HeaderadmonComponent,
     FooterComponent,
     FooteradmonComponent,
-    PerfilUsuarioComponent,
-    EventosComponent,
-    AlbumComponent,
-    ScrumComponent,
-    CoachComponent,
-    GerenciaComponent,
-    ChatComponent,
-    InfoComponent,
     AdministracionComponent,
+    PrincipalComponent,
     BodyComponent,
     BodyadmonComponent,
+    HomeComponent,
+    EventosComponent,
+    ScrumComponent,
+    CoachComponent,
     GruposComponent,
-    ExpertosComponent,
+    LibrosComponent,
+    InfoComponent,
+    IdiComponent,
+    ChatComponent,
+    GerenciaComponent,
+    PerfilUsuarioComponent,
+    AlbumComponent,
     EncuestasComponent,
-    LibrosComponent
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,
-    MatButtonModule, 
-    MatCheckboxModule,
-    MatSidenavModule,
     MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatCheckboxModule,
     RoutesRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

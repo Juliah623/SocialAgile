@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-body',
@@ -6,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class BodyComponent implements OnInit {
-
-  constructor() { }
+  private idPage: Number = 1;
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.router.navigate(['Principal/Home']);
   }
 
+  onActivate(HomeComponent) {
+    this.idPage = HomeComponent.sayhello();
+  }
+  changeidPage() {
+    return this.idPage;
+  }
 }
+
+
 
