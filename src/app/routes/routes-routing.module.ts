@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GestionUsuariosComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
 import {
   PrincipalComponent, HomeComponent, EventosComponent, ScrumComponent, CoachComponent, GruposComponent,
-  LibrosComponent, InfoComponent, IdiComponent,  GerenciaComponent, PerfilUsuarioComponent,
+  LibrosComponent, InfoComponent, IdiComponent, GerenciaComponent, PerfilUsuarioComponent,
   AlbumComponent, EncuestasComponent, NoticiasComponent
 } from '../principal';
 

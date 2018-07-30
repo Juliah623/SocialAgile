@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-idi',
   templateUrl: './idi.component.html',
-  styleUrls: ['./idi.component.sass']
+  styleUrls: ['./idi.component.scss']
 })
 export class IdiComponent implements OnInit {
 
