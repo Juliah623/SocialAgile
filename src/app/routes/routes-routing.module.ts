@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GestionUsuariosComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
+import { GestionUsuariosComponent, ContrasenaComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
 import {
   PrincipalComponent, HomeComponent, EventosComponent, ScrumComponent, CoachComponent, GruposComponent,
   LibrosComponent, InfoComponent, IdiComponent, GerenciaComponent, PerfilUsuarioComponent,
@@ -9,6 +9,7 @@ import {
 
 const routes: Routes = [
   { path: 'Gestion-usuarios', component: GestionUsuariosComponent },
+  { path: 'Contrasena', component: ContrasenaComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Registro', component: RegistroComponent },
   {

@@ -8,6 +8,7 @@ import { RoutesRoutingModule } from './routes/routes-routing.module';
 
 import { AppComponent } from './app.component';
 import { GestionUsuariosComponent } from './gestion-usuarios';
+import { ContrasenaComponent } from './gestion-usuarios';
 import { LoginComponent } from './gestion-usuarios';
 import { RegistroComponent } from './gestion-usuarios';
 import { HeaderComponent } from './principal';
@@ -38,6 +39,7 @@ import { NoticiasComponent } from './principal';
   declarations: [
     AppComponent,
     GestionUsuariosComponent,
+    ContrasenaComponent,
     LoginComponent,
     RegistroComponent,
     HeaderComponent,
