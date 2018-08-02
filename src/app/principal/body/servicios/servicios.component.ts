@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiciosService } from '../../../servicios.service';
+import { ServiciosService, Categoria } from '../../../servicios.service';
 import { Observable } from '../../../../../node_modules/rxjs';
 
 
@@ -10,8 +10,10 @@ import { Observable } from '../../../../../node_modules/rxjs';
 	providers: [ServiciosService]
 })
 export class ServiciosComponent implements OnInit {
+	private categoria: Array<Categoria>[];
 
-	categorias: Array<object>=[];
+	//private categorias: Array<object>=[];
+	
 	constructor(private serviciosService: ServiciosService) { }
 
 
@@ -20,9 +22,9 @@ export class ServiciosComponent implements OnInit {
 	}
 
 	public getCategoria() {
-		this.serviciosService.getCategoria().subscribe((retorno: Array<object>=[]) => {
-			this.categorias = retorno;
-			console.log(this.categorias);
+		this.serviciosService.getCategoria().subscribe((retorno: Array<Categoria>[]) => {
+			this.categoria = retorno;
+			console.log(this.categoria);
 		})	
 	
 }

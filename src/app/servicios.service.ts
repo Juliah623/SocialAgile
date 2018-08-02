@@ -18,3 +18,11 @@ export class ServiciosService {
     return this.http.get(this.url);
   }
 }
+
+export interface Categoria {
+  nombre: string;
+  descripcion: string;
+  img: string;
+  id: string;
+
+}
