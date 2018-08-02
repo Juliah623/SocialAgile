@@ -17,6 +17,7 @@ export * from './body/scrum/scrum.component';
 export * from './body/home/home.component';
 export * from './body/noticias/noticias.component';
 export * from './body/idi/idi.component';
+export * from './body/servicios/servicios.component';
 
 
 

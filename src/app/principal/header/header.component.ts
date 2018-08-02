@@ -10,8 +10,9 @@ export class HeaderComponent implements OnInit {
   public watcher: any;
   public opened: boolean;
   public over: string;
-  public ngOnInit(): void {
-    throw new Error("Method not implemented.");
+
+  public ngOnInit(){
+
   }
 
   constructor(public media: ObservableMedia) {
