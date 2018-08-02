@@ -1,4 +1,4 @@
-<nav class="nav-extended">
+<!--<nav class="nav-extended">
     <div class="row">
         <div class="col s12 blue darken-2">
             <div class="nav-wrapper">
@@ -57,28 +57,96 @@
             </div>
         </div>
     </div>
+</nav>-->
+
+<nav class="nav-extended">
+    <div class="row">
+        <div class="col s12 blue darken-2">
+            <div class="nav-wrapper">
+                <a routerLink="/Principal/Home" class="brand-logo">
+                    <i class="material-icons">ac_unit</i>Social Agile TCS </a>
+                <a data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="input-field" for="search">
+                                    <i class="material-icons left">search</i>
+                                </label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <a routerLink="/Principal/Servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Principal/Gerencia">Gerencia Ágil</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Principal/Perfil-usuario">Perfil_Usuario</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/Login']">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+            <mat-sidenav #sidenav [(mode)]="over" [(opened)]="opened" class="bottom-to-top">
+            </mat-sidenav>
+
+            <span fxShow.lt-md="false" fxShow.gt-sm="true">
+
+                <button mat-button [matMenuTriggerFor]="dropDown">
+                    <i class="medium material-icons">menu</i>
+                </button>
+                <mat-menu #dropDown="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>assistant</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Eventos">Eventos</a>
+                        </span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>mood</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Scrum">Scrum Masters</a>
+                        </span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>face</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Coach">Agile Coachs</a>
+                        </span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>people</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Grupos">Grupos</a>
+                        </span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>import_contacts</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Libros">Libros</a>
+                        </span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>info</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Info">información</a>
+                        </span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>lightbulb_outline</mat-icon>
+                        <span>
+                            <a routerLink="/Principal/Idi">I+D+i</a>
+                        </span>
+                    </button>
+                </mat-menu>
+            </span>
+        </div>
+    </div>
 </nav>
-<!-->responsive-->
-<ul class="sidenav" id="mobile-demo">
-    <li>
-        <a routerLink="/Principal/Eventos">Eventos</a>
-    </li>
-    <li>
-        <a routerLink="/Principal/Scrum">Scrum Masters</a>
-    </li>
-    <li>
-        <a routerLink="/Principal/Coach">Agile Coachs</a>
-    </li>
-    <li>
-        <a routerLink="/Principal/Grupos">Grupos</a>
-    </li>
-    <li>
-        <a routerLink="/Principal/Libros">Libros</a>
-    </li>
-    <li>
-        <a routerLink="/Principal/Info">información</a>
-    </li>
-    <li>
-        <a routerLink="/Principal/Chat">Chat</a>
-    </li>
-</ul>

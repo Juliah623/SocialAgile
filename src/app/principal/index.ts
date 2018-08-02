@@ -7,6 +7,7 @@ export * from './body/chat/chat.component';
 export * from './body/coach/coach.component';
 export * from './body/encuestas/encuestas.component';
 export * from './body/eventos/eventos.component';
+export * from './body/servicios/servicios.component';
 export * from './body/gerencia/gerencia.component';
 export * from './body/grupos/grupos.component';
 export * from './body/info/info.component';
@@ -16,6 +17,7 @@ export * from './body/scrum/scrum.component';
 export * from './body/home/home.component';
 export * from './body/noticias/noticias.component';
 export * from './body/idi/idi.component';
+
 
 
 

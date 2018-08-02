@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ObservableMedia, MediaChange } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  public watcher: any;
+  public opened: boolean;
+  public over: string;
+  public ngOnInit(): void {
+    throw new Error("Method not implemented.");
   }
 
+  constructor(public media: ObservableMedia) {
+    this.watcher = media.subscribe((change: MediaChange) => {
+      if (change.mqAlias === 'sm' || change.mqAlias === 'xs') {
+        this.opened = false;
+        this.over = 'over';
+      } else {
+        this.opened = true;
+        this.over = 'side';
+      }
+    });
+  }
 }

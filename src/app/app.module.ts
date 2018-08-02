@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import {
   MatToolbarModule, MatButtonModule, MatSidenavModule,
-  MatIconModule, MatListModule, MatCardModule, MatCheckboxModule
+  MatIconModule, MatListModule, MatCardModule, MatCheckboxModule, MatMenuModule, MatExpansionModule,
 } from '@angular/material';
 import { RoutesRoutingModule } from './routes/routes-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { GestionUsuariosComponent } from './gestion-usuarios';
@@ -33,6 +35,9 @@ import { PerfilUsuarioComponent } from './principal';
 import { AlbumComponent } from './principal';
 import { EncuestasComponent } from './principal';
 import { NoticiasComponent } from './principal';
+import { ServiciosComponent } from './principal';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { ServiciosService } from './servicios.service';
 
 
 @NgModule({
@@ -63,10 +68,13 @@ import { NoticiasComponent } from './principal';
     PerfilUsuarioComponent,
     AlbumComponent,
     EncuestasComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -74,9 +82,12 @@ import { NoticiasComponent } from './principal';
     MatListModule,
     MatCardModule,
     MatCheckboxModule,
-    RoutesRoutingModule
+    RoutesRoutingModule,
+    MatMenuModule,
+    MatExpansionModule,
+    FlexLayoutModule 
   ],
-  providers: [],
+  providers: [ServiciosService],
   bootstrap: [AppComponent]
 })
 

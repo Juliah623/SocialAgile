@@ -8,7 +8,6 @@
           <div class="input-field">
             <label for="firstName">Nombre</label>
             <input type="text" class="form-control" name="firstName" />
-            <div *ngIf="f.submitted && !firstName.valid" class="help-block">El primer nombre es requerido</div>
           </div>
           <div class="col s3"></div>
         </div>
@@ -21,7 +20,6 @@
           <div class="input-field">
             <label for="lastName">Apellido</label>
             <input type="text" class="form-control" name="lastName" />
-            <div *ngIf="f.submitted && !lastName.valid" class="help-block">El apellido es requerido</div>
           </div>
           <div class="col s3"></div>
         </div>
@@ -34,7 +32,6 @@
           <div class="input-field">
             <label for="username">Nombre de usuario</label>
             <input type="text" class="form-control" name="username" />
-            <div *ngIf="f.submitted && !username.valid" class="help-block">El nombre de usuario es requerido</div>
           </div>
           <div class="col s3"></div>
         </div>
@@ -47,7 +44,6 @@
           <div class="input-field">
             <label for="password">Contraseña</label>
             <input type="password" class="form-control" name="password" />
-            <div *ngIf="f.submitted && !password.valid" class="help-block">La contraseña es requerida</div>
           </div>
           <div class="col s3"></div>
         </div>
