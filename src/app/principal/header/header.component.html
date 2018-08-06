@@ -39,42 +39,72 @@
                     </li>
                 </ul>
                 <br>
-                <button mat-icon-button [matMenuTriggerFor]="menu">
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <mat-menu #menu="matMenu">
-                    <ul>
-                        <li>
-                            <a routerLink="/Principal/Eventos">
-                                <mat-icon>assistant</mat-icon> Eventos</a>
-                        </li>
-                        <li>
-                            <a routerLink="/Principal/Scrum">
-                                <mat-icon>mood</mat-icon> Scrum Masters</a>
-                        </li>
-                        <li>
-                            <a routerLink="/Principal/Coach">
-                                <mat-icon>face</mat-icon> Agile Coachs</a>
-                        </li>
-                        <li>
-                            <a routerLink="/Principal/Grupos">
-                                <mat-icon>people</mat-icon> Grupos</a>
-                        </li>
-                        <li>
-                            <a routerLink="/Principal/Libros">
-                                <mat-icon>import_contacts</mat-icon> Libros</a>
-                        </li>
-                        <li>
-                            <a routerLink="/Principal/Info">
-                                <mat-icon>info</mat-icon> información</a>
-                        </li>
-                        <li>
-                            <a routerLink="/Principal/Idi">
-                                <mat-icon>lightbulb_outline</mat-icon> I+D+i</a>
-                        </li>
-                    </ul>
-                </mat-menu>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <div class="menu-sidenav-content">
+                        <button type="button" mat-button (click)="drawer.toggle()">
+                            <mat-icon>menu</mat-icon>
+                        </button>
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
 </nav>
+
+<mat-drawer-container class="menu-container" autosize>
+    <mat-drawer-content>
+        <app-body></app-body>
+    </mat-drawer-content>
+    <mat-drawer #drawer class="menu-sidenav" mode="side">
+        <ul>
+            <li>
+                <a routerLink="/Principal/Eventos">
+                    <mat-icon>assistant</mat-icon> Eventos</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+            <br>
+            <li>
+                <a routerLink="/Principal/Scrum">
+                    <mat-icon>mood</mat-icon> Scrum Masters</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+            <br>
+            <li>
+                <a routerLink="/Principal/Coach">
+                    <mat-icon>face</mat-icon> Agile Coachs</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+            <br>
+            <li>
+                <a routerLink="/Principal/Grupos">
+                    <mat-icon>people</mat-icon> Grupos</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+            <br>
+            <li>
+                <a routerLink="/Principal/Libros">
+                    <mat-icon>import_contacts</mat-icon> Libros</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+            <br>
+            <li>
+                <a routerLink="/Principal/Info">
+                    <mat-icon>info</mat-icon> Información</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+            <br>
+            <li>
+                <a routerLink="/Principal/Idi">
+                    <mat-icon>lightbulb_outline</mat-icon> I+D+i</a>
+            </li>
+            <br>
+            <li class="divider" tabindex="-1"></li>
+        </ul>
+    </mat-drawer>
+</mat-drawer-container>
