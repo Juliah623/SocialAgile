@@ -1,12 +1,14 @@
-<nav class="nav-extended">
+<nav>
     <div class="row">
         <div class="col s12 blue darken-2">
             <div class="nav-wrapper">
-                <a routerLink="/Principal/Home" class="brand-logo">
-                    <i class="material-icons">ac_unit</i>Social Agile TCS</a>
-                <a data-target="mobile-demo" class="sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
+                <li>
+                    <a routerLink="/Principal/Home" class="brand-logo">
+                        <i class="material-icons">ac_unit</i>Social Agile TCS</a>
+                    <!--<a data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>-->
+                </li>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <form>
@@ -20,143 +22,59 @@
                         </form>
                     </li>
                     <li>
-                        <a routerLink="/Principal/Servicios">Servicios</a>
+                        <a routerLink="/Principal/Servicios">
+                            <mat-icon>swap_vert</mat-icon> Servicios</a>
                     </li>
                     <li>
-                        <a routerLink="/Principal/Gerencia">Gerencia Ágil</a>
+                        <a routerLink="/Principal/Gerencia">
+                            <mat-icon>sentiment_very_satisfied</mat-icon> Gerencia Ágil</a>
                     </li>
                     <li>
-                        <a routerLink="/Principal/Perfil-usuario">Perfil_Usuario</a>
+                        <a routerLink="/Principal/Perfil-usuario">
+                            <mat-icon>person</mat-icon> Perfil_Usuario</a>
                     </li>
                     <li>
-                        <a [routerLink]="['/Login']">Cerrar Sesión</a>
+                        <a [routerLink]="['/Login']">
+                            <mat-icon>input</mat-icon> Cerrar Sesión</a>
                     </li>
                 </ul>
-            </div>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab">
-                        <a routerLink="/Principal/Eventos">
-                            <mat-icon>assistant</mat-icon> Eventos</a>
-                    </li>
-                    <li class="tab">
-                        <a routerLink="/Principal/Scrum">
-                            <mat-icon>mood</mat-icon> Scrum Masters</a>
-                    </li>
-                    <li class="tab">
-                        <a routerLink="/Principal/Coach">
-                            <mat-icon>face</mat-icon> Agile Coachs</a>
-                    </li>
-                    <li class="tab">
-                        <a routerLink="/Principal/Grupos">
-                            <mat-icon>people</mat-icon> Grupos</a>
-                    </li>
-                    <li class="tab">
-                        <a routerLink="/Principal/Libros">
-                            <mat-icon>import_contacts</mat-icon> Libros</a>
-                    </li>
-                    <li class="tab">
-                        <a routerLink="/Principal/Info">
-                            <mat-icon>info</mat-icon> información</a>
-                    </li>
-                    <li class="tab">
-                        <a routerLink="/Principal/Idi">
-                            <mat-icon>lightbulb_outline</mat-icon> I+D+i</a>
-                    </li>
-                </ul>
+                <br>
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <ul>
+                        <li>
+                            <a routerLink="/Principal/Eventos">
+                                <mat-icon>assistant</mat-icon> Eventos</a>
+                        </li>
+                        <li>
+                            <a routerLink="/Principal/Scrum">
+                                <mat-icon>mood</mat-icon> Scrum Masters</a>
+                        </li>
+                        <li>
+                            <a routerLink="/Principal/Coach">
+                                <mat-icon>face</mat-icon> Agile Coachs</a>
+                        </li>
+                        <li>
+                            <a routerLink="/Principal/Grupos">
+                                <mat-icon>people</mat-icon> Grupos</a>
+                        </li>
+                        <li>
+                            <a routerLink="/Principal/Libros">
+                                <mat-icon>import_contacts</mat-icon> Libros</a>
+                        </li>
+                        <li>
+                            <a routerLink="/Principal/Info">
+                                <mat-icon>info</mat-icon> información</a>
+                        </li>
+                        <li>
+                            <a routerLink="/Principal/Idi">
+                                <mat-icon>lightbulb_outline</mat-icon> I+D+i</a>
+                        </li>
+                    </ul>
+                </mat-menu>
             </div>
         </div>
     </div>
 </nav>
-
-<!--<nav class="nav-extended">
-    <div class="row">
-        <div class="col s12 blue darken-2">
-            <div class="nav-wrapper">
-                <a routerLink="/Principal/Home" class="brand-logo">
-                    <i class="material-icons">ac_unit</i>Social Agile TCS </a>
-                <a data-target="mobile-demo" class="sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <form>
-                            <div class="input-field">
-                                <input id="search" type="search" required>
-                                <label class="input-field" for="search">
-                                    <i class="material-icons left">search</i>
-                                </label>
-                                <i class="material-icons">close</i>
-                            </div>
-                        </form>
-                    </li>
-                    <li>
-                        <a routerLink="/Principal/Servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a routerLink="/Principal/Gerencia">Gerencia Ágil</a>
-                    </li>
-                    <li>
-                        <a routerLink="/Principal/Perfil-usuario">Perfil_Usuario</a>
-                    </li>
-                    <li>
-                        <a [routerLink]="['/Login']">Cerrar Sesión</a>
-                    </li>
-                </ul>
-            </div>
-            <mat-sidenav #sidenav [(mode)]="over" [(opened)]="opened" class="bottom-to-top">
-            </mat-sidenav>
-
-            <span fxShow.lt-md="false" fxShow.gt-sm="true">
-
-                <button mat-button [matMenuTriggerFor]="dropDown">
-                    <i class="medium material-icons">menu</i>
-                </button>
-                <mat-menu #dropDown="matMenu">
-                    <button mat-menu-item>
-                        <mat-icon>assistant</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Eventos">Eventos</a>
-                        </span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon>mood</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Scrum">Scrum Masters</a>
-                        </span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon>face</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Coach">Agile Coachs</a>
-                        </span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon>people</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Grupos">Grupos</a>
-                        </span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon>import_contacts</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Libros">Libros</a>
-                        </span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon>info</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Info">información</a>
-                        </span>
-                    </button>
-                    <button mat-menu-item>
-                        <mat-icon>lightbulb_outline</mat-icon>
-                        <span>
-                            <a routerLink="/Principal/Idi">I+D+i</a>
-                        </span>
-                    </button>
-                </mat-menu>
-            </span>
-        </div>
-    </div>
-</nav>-->

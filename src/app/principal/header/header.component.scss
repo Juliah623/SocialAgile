@@ -1,3 +1,33 @@
+//barra de navegación ppal
+
+menu{
+    width:300px;
+    margin: 5% auto;
+    float:left;
+    position:relative; 
+}
+
+nav li{
+    list-style: none;
+    position:relative; 
+}
+
+nav li a{
+    text-decoration:none;
+    padding: 5px;
+    display:block;
+}
+ nav li.parent:hover{
+    margin:-1px;
+}
+
+
+
+
+
+
+  
+
 
   
 

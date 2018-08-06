@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   public opened: boolean;
   public over: string;
 
-  public ngOnInit(){
+  public ngOnInit() {
 
   }
 
