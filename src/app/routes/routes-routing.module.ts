@@ -4,7 +4,7 @@ import { GestionUsuariosComponent, ContrasenaComponent, LoginComponent, Registro
 import {
   PrincipalComponent, HomeComponent, EventosComponent, ScrumComponent, CoachComponent, GruposComponent,
   LibrosComponent, InfoComponent, IdiComponent, GerenciaComponent, PerfilUsuarioComponent,
-  AlbumComponent, EncuestasComponent, NoticiasComponent, ServiciosComponent
+  AlbumComponent, EncuestasComponent, NoticiasComponent, ServiciosComponent, NotificacionesComponent
 } from '../principal';
 
 const routes: Routes = [
@@ -55,6 +55,9 @@ const routes: Routes = [
       },
       {
         path: 'Noticias', component: NoticiasComponent
+      },
+      {
+        path: 'Notificaciones', component: NotificacionesComponent
       }
     ]
   },

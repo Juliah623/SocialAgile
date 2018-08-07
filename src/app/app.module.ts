@@ -38,6 +38,7 @@ import { NoticiasComponent } from './principal';
 import { ServiciosComponent } from './principal';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { ServiciosService } from './servicios.service';
+import { NotificacionesComponent } from './principal';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { ServiciosService } from './servicios.service';
     AlbumComponent,
     EncuestasComponent,
     NoticiasComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    NotificacionesComponent
   ],
   imports: [
     BrowserModule,

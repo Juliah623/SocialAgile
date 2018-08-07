@@ -24,5 +24,4 @@ export interface Categoria {
   descripcion: string;
   img: string;
   id: string;
-
 }
