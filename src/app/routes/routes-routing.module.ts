@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GestionUsuariosComponent, ContrasenaComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
 import {
-  PrincipalComponent, HomeComponent, EventosComponent, ScrumComponent, CoachComponent, GruposComponent,
-  LibrosComponent, InfoComponent, IdiComponent, GerenciaComponent, PerfilUsuarioComponent,
-  AlbumComponent, EncuestasComponent, NoticiasComponent, ServiciosComponent, NotificacionesComponent
+  PrincipalComponent, HomeComponent, CoachComponent, MantenimientoComponent, LegalComponent, GerenciaComponent, PerfilUsuarioComponent,
+  NoticiasComponent, ServiciosComponent, NotificacionesComponent
 } from '../principal';
 
 const routes: Routes = [
@@ -18,25 +17,15 @@ const routes: Routes = [
         path: 'Home', component: HomeComponent
       },
       {
-        path: 'Eventos', component: EventosComponent
-      },
-      {
-        path: 'Scrum', component: ScrumComponent
-      },
-      {
         path: 'Coach', component: CoachComponent
       },
       {
-        path: 'Grupos', component: GruposComponent
+        path: 'Grupos', component: MantenimientoComponent
       },
       {
-        path: 'Libros', component: LibrosComponent
       },
       {
-        path: 'Info', component: InfoComponent
-      },
-      {
-        path: 'Idi', component: IdiComponent
+        path: 'Legal', component: LegalComponent
       },
       {
         path: 'Servicios', component: ServiciosComponent
@@ -46,12 +35,6 @@ const routes: Routes = [
       },
       {
         path: 'Perfil-usuario', component: PerfilUsuarioComponent
-      },
-      {
-        path: 'Album', component: AlbumComponent
-      },
-      {
-        path: 'Encuenstas', component: EncuestasComponent
       },
       {
         path: 'Noticias', component: NoticiasComponent
