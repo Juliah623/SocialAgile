@@ -1,7 +1,7 @@
 import { Response } from '@angular/http';
 import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { Observable } from "rxjs";
+import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -9,10 +9,10 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class ServiciosService {
-  url: string = 'https://tuplansrv.herokuapp.com/api/categoria';
+  url = 'https://tuplansrv.herokuapp.com/api/categoria';
 
   constructor(private http: HttpClient) {
-   }
+  }
 
   getCategoria() {
     return this.http.get(this.url);
