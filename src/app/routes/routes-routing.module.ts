@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GestionUsuariosComponent, ContrasenaComponent, LoginComponent, RegistroComponent } from '../gestion-usuarios';
 import {
-  PrincipalComponent, HomeComponent, CoachComponent, MantenimientoComponent, LegalComponent, GerenciaComponent, PerfilUsuarioComponent,
+  PrincipalComponent, HomeComponent, CapacitacionesComponent, MantenimientoComponent,
+  LegalComponent, GerenciaComponent, PerfilUsuarioComponent,
   NoticiasComponent, ServiciosComponent, NotificacionesComponent
 } from '../principal';
 
@@ -17,12 +18,10 @@ const routes: Routes = [
         path: 'Home', component: HomeComponent
       },
       {
-        path: 'Coach', component: CoachComponent
+        path: 'Capactaciones', component: CapacitacionesComponent
       },
       {
-        path: 'Grupos', component: MantenimientoComponent
-      },
-      {
+        path: 'Mantenimiento', component: MantenimientoComponent
       },
       {
         path: 'Legal', component: LegalComponent
