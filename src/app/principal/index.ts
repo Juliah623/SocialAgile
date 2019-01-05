@@ -10,7 +10,6 @@ export * from './body/legal/legal.component';
 export * from './body/perfil-usuario/perfil-usuario.component';
 export * from './body/home/home.component';
 export * from './body/noticias/noticias.component';
-export * from './body/servicios/servicios.component';
 
 
 

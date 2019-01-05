@@ -4,7 +4,7 @@ import { GestionUsuariosComponent, ContrasenaComponent, LoginComponent, Registro
 import {
   PrincipalComponent, HomeComponent, CapacitacionesComponent, MantenimientoComponent,
   LegalComponent, GerenciaComponent, PerfilUsuarioComponent,
-  NoticiasComponent, ServiciosComponent, NotificacionesComponent
+  NoticiasComponent, NotificacionesComponent
 } from '../principal';
 
 const routes: Routes = [
@@ -18,16 +18,13 @@ const routes: Routes = [
         path: 'Home', component: HomeComponent
       },
       {
-        path: 'Capactaciones', component: CapacitacionesComponent
+        path: 'Capacitaciones', component: CapacitacionesComponent
       },
       {
         path: 'Mantenimiento', component: MantenimientoComponent
       },
       {
         path: 'Legal', component: LegalComponent
-      },
-      {
-        path: 'Servicios', component: ServiciosComponent
       },
       {
         path: 'Gerencia', component: GerenciaComponent

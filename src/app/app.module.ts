@@ -25,10 +25,10 @@ import { HomeComponent } from './principal';
 import { GerenciaComponent } from './principal';
 import { PerfilUsuarioComponent } from './principal';
 import { NoticiasComponent } from './principal';
-import { ServiciosComponent } from './principal';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
-import { ServiciosService } from './servicios.service';
+import { LoginService } from './gestion-usuarios/login/login.service';
 import { NotificacionesComponent } from './principal';
+import { UserService } from './gestion-usuarios/login/user.service';
 
 
 @NgModule({
@@ -50,7 +50,6 @@ import { NotificacionesComponent } from './principal';
     GerenciaComponent,
     PerfilUsuarioComponent,
     NoticiasComponent,
-    ServiciosComponent,
     NotificacionesComponent,
     CapacitacionesComponent,
     LegalComponent,
@@ -71,7 +70,7 @@ import { NotificacionesComponent } from './principal';
     MatMenuModule,
     MatExpansionModule,
     FlexLayoutModule],
-  providers: [ServiciosService],
+  providers: [LoginService, UserService],
   bootstrap: [AppComponent]
 })
 
