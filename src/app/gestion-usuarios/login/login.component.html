@@ -8,20 +8,21 @@
           <input type="text" #username class="form-control" placeholder="Nombre de usuario" name="username" value="">
         </div>
         <div class="form-group">
-          <input type="password" #password class="form-control" placeholder="Contrasena" name="password" value="">
+          <input type="password" #password class="form-control" placeholder="Contraseña" name="password" value="">
         </div>
-
-        <div class="form-check">
-          <div *ngIf="usserLogged"></div> <!-- pte revisar este *ngIf -->
-          <button class="btn btn-login float-right" id="login-button" value="" (click)="logIn(username.value, password.value, $event)">Ingresar</button>
-
-          <br><br><br>
+        <br>
+        <div class="text-center">
+          <div *ngIf="!usserLogged">
+            <!-- pte revisar este *ngIf -->
+            <button class="btn btn-login" id="login-button" value="" (click)="logIn(username.value, password.value, $event)">Ingresar</button>
+          </div>
+          <br><br>
           <h6>
-            <a [routerLink]="['/Contrasena']" class="text">¿Olvidaste tu contraseña?</a>
+            <a [routerLink]="['/Contrasena']" class="text-center">¿Olvidaste tu contraseña?</a>
           </h6>
           <h6>
             <div class="pass">¿No tienes una cuenta?
-              <a [routerLink]="['/Registro']" class="text"> Regístrate</a>
+              <a [routerLink]="['/Registro']" class="text-center"> Regístrate</a>
             </div>
           </h6>
         </div>
@@ -71,3 +72,4 @@
       </div>
     </div>
   </div>
+</div>

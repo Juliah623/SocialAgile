@@ -29,6 +29,10 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { LoginService } from './gestion-usuarios/login/login.service';
 import { NotificacionesComponent } from './principal';
 import { UserService } from './gestion-usuarios/login/user.service';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -69,7 +73,10 @@ import { UserService } from './gestion-usuarios/login/user.service';
     RoutesRoutingModule,
     MatMenuModule,
     MatExpansionModule,
-    FlexLayoutModule],
+    FlexLayoutModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule],
   providers: [LoginService, UserService],
   bootstrap: [AppComponent]
 })
